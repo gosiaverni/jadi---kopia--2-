@@ -1,0 +1,250 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poznaj obraz</title>
+
+  <!-- Poppins jako nowoczesna alternatywa dla Garet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+  <main class="hero">
+    <img
+  src="3840px-A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg"
+  class="background-image"
+  id="backgroundImage"
+/>
+    <div class="magnifier" id="magnifier">
+
+  <img
+    src="3840px-A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg"
+    class="magnifier-image"
+    id="magnifierImage"
+  />
+
+</div>
+
+    <div class="overlay-card active" id="welcomeCard">
+      <p class="subtitle">poznaj obraz</p>
+
+      <h1>
+  „Niedzielne popołudnie na wyspie Grande Jatte”
+</h1>
+
+<h2 class="author">
+  autorstwa Georges’a Seurat’a
+</h2>
+      <button class="start-btn" id="startBtn">
+        Zaczynajmy!
+      </button>
+    </div>
+
+    <div class="tool-card" id="toolCard">
+
+  <h2>
+    przyjrzyj się obrazowi
+    używając narzędzia lupy
+  </h2>
+
+  <div class="button-group">
+
+    <button class="back-btn" id="backBtn">
+      wróć
+    </button>
+
+    <button class="next-btn" id="nextBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+<div class="info-card" id="infoCard">
+
+  <div class="info-content">
+
+    <h2>diabeł tkwi w szczegółach</h2>
+
+    <p>
+      Wzorowy przykład pointylizmu namalowany w latach 1884-86. 
+Niedziela XIX-wiecznego Paryża była dniem, w którym Paryżanie uciekali od upału miasta i szukali cienia drzew i chłodnej bryzy znad rzeki. Na pierwszy rzut oka odbiorca widzi wielu różnych postaci odpoczywających w parku nad rzeką. Obraz był swoistym komentarzem społeczeństwa ówczesnego Paryża. Autor ukazał je jednak w mocno zgeometryzowanej, zunifikowanej formule, pozbawiającej je wszelkich oznak indywidualności. Przy zbudowaniu kompozycji sprawiającej tak harmonijne wrażenie, Seurat posłużył się antyczną zasadą złotego podziału, odrodzoną na gruncie sztuki francuskiej przez Nicolasa Poussina w XVII wieku.
+
+
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-info-btn" id="backInfoBtn">
+      wróć
+    </button>
+
+    <button class="next-info-btn" id="nextInfoBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+
+<div class="bottom-card" id="bottomCard">
+
+  <div class="bottom-content">
+
+    <h2>współczesny fryz partenoński</h2>
+
+    <p>
+    Seurat sam przyznawał, iż jego obraz jest modernistyczną wersją procesji ukazanej na fryzie partenońskim. By osiągnąć to zamierzenie w swoim obrazie przedstawił różnorodną społeczność Paryża - od żołnierzy po nawet prostytutki. Malarz był zafascynowany zderzeniem rzeczy odmiennych: miasta i wsi, gospodarstw i fabryk, burżuazją i klasą robotniczą spotykającymi się w zaskakującej harmonii przeciwieństw.
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-bottom-btn" id="backBottomBtn">
+      wróć
+    </button>
+
+    <button class="next-bottom-btn" id="nextBottomBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+<div class="left-card" id="leftCard">
+
+  <div class="left-content">
+
+    <h2>kobieta z małpą</h2>
+
+    <p>
+      Małpka na smyczy nie była zwierzątkiem domowym. W XIX-wiecznym kontekście społecznym Paryża i slangu, kobieta z małpą (singesse (z fr. "Kobieca małpa"  – potoczne określenie kurtyzany lub kobiety lekkich obyczajów) była czytelnym symbolem prostytutki z wyższych sfer,  spacerującej ze swoim klientem. Autor w sposób ironiczny komentuje hipokryzję ówczesnej burżuazji.
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-left-btn" id="backLeftBtn">
+      wróć
+    </button>
+
+    <button class="next-left-btn" id="nextLeftBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+<div class="wide-right-card" id="wideRightCard">
+
+  <div class="wide-right-content">
+
+    <h2>łowienie ryb</h2>
+
+    <p>
+     Kolejnym przykładem przedstawienia prostytucji na obrazie jest kobieta łowiąca ryby. Ukazana w czerwonej, wystawnej sukni i kwiecistym kapeluszu stanowi aluzję do nierządu dziejącego się nad Sekwaną.
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-wide-btn" id="backWideBtn">
+      wróć
+    </button>
+
+    <button class="next-wide-btn" id="nextWideBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+<div class="wide-right-card second-wide-right-card" id="secondWideRightCard">
+
+  <div class="wide-right-content">
+
+    <h2>zgeometryzowana postać</h2>
+
+    <p>
+      Ta postać to kobieta ubrana najprawdopodobniej w biały czepek z długimi, czerwonymi wstęgami, lub otulona czerwonym szalem. Siedzi tyłem do widza, co nadaje jej geometryczny i uproszczony kształt. Część historyków identyfikuje postać jako pielęgniarkę lub opiekunkę osób starszych, co wyjaśniałoby dobór w ubiorze oraz towarzystwo starszego mężczyzny. Często interpretuje się ją jako element wprowadzający spokój i porządek w tłumie postaci - kontrastując z bardziej dynamicznymi i “bardziej zaawansowanymi metaforycznie” postaciami na obrazie. 
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-second-wide-btn" id="backSecondWideBtn">
+      wróć
+    </button>
+
+    <button class="next-second-wide-btn" id="nextSecondWideBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+<div class="narrow-right-card" id="narrowRightCard">
+
+  <div class="narrow-right-content">
+
+    <h2>dziewczynka w bieli</h2>
+
+    <p>
+      Dziewczynka przyciąga wzrok widza poprzez swoją lokalizację na obrazie, biel swoich ubrań i wzrok skierowany ku odbiorcy. Zdarzenia mające miejsce na obrazie są metaforą francuskiej społeczności oraz jej nieprzyjemnych w charakterze zachowań i zwyczajów, które na obrazie zostały przedstawione jako spokojne popołudnie, są tłem dla niewinności dziecka, podkreślonej bielą swojej sukienki. Dodatkowo, jej drobna postura służy jako kontrast w otoczeniu wysokich dorosłych, co wyodrębnia ją z towarzystwa. 
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-narrow-btn" id="backNarrowBtn">
+      wróć
+    </button>
+
+    <button class="next-narrow-btn" id="nextNarrowBtn">
+      dalej
+    </button>
+
+  </div>
+
+</div>
+<div class="final-bottom-card" id="finalBottomCard">
+
+  <div class="final-bottom-content">
+
+    <h2>sekwana</h2>
+
+    <p>
+    Z lewej strony płótna widać fragment wody i płynące po niej żaglówkę, parowiec i łódkę. Znajdując się po lewej stronie tworząc przedłużenie Sekwany z obrazu „Kąpiel w Asnières“, który dzięki temu staje się lustrzanym odbiciem wyspy Grande Jatte
+ Obramowanie obrazu ma odwrócony kolor, jakby otaczający ich świat również powoli odwracał się od znanego im sposobu życia. W tym kontekście chłopiec kąpiący się po drugiej stronie brzegu rzeki w Asnières zdaje się do nich wołać, jakby chciał powiedzieć: „Jesteśmy przyszłością. Chodźcie i dołączcie do nas”. 
+
+    </p>
+
+  </div>
+
+  <div class="button-group">
+
+    <button class="back-final-btn" id="backFinalBtn">
+      wróć
+    </button>
+
+  </div>
+
+</div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
