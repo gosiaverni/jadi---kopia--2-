@@ -114,7 +114,7 @@ function animateMagnifier() {
 
   if (toolCard.classList.contains('active')) {
 
-    const zoom = 1.4;
+    const zoom = 1.8;
 
 /* dynamiczny rozmiar lupy */
 

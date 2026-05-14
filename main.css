@@ -986,3 +986,115 @@ body {
    margin-top: -75px;
 
 }
+
+/* =========================
+   RESPONSYWNOŚĆ
+========================= */
+
+@media (max-width: 1100px) {
+
+  /* PANELE */
+
+  .info-card,
+  .left-card,
+  .wide-right-card,
+  .narrow-right-card {
+    width: 100%;
+
+    padding:
+      40px 28px 28px 28px;
+  }
+
+  .bottom-card,
+  .final-bottom-card {
+    height: auto;
+
+    min-height: 38%;
+
+    padding:
+      35px 28px 28px 28px;
+  }
+
+  /* TEKST */
+
+  .info-content p,
+  .left-content p,
+  .wide-right-content p,
+  .narrow-right-content p,
+  .bottom-content p,
+  .final-bottom-content p {
+    font-size: 1rem;
+
+    line-height: 1.6;
+  }
+
+  /* TYTUŁY */
+
+  .info-content h2,
+  .left-content h2,
+  .wide-right-content h2,
+  .narrow-right-content h2,
+  .bottom-content h2,
+  .final-bottom-content h2 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+  }
+
+  /* PRZYCISKI */
+
+  .button-group {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .button-group button {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+
+  /* pierwszy slajd */
+
+  .overlay-card {
+    padding:
+      30px 22px;
+  }
+
+  .overlay-card h1 {
+    font-size: clamp(1.4rem, 7vw, 2.2rem);
+  }
+
+  .subtitle,
+  .author {
+    font-size: 1rem;
+  }
+
+  /* lupa */
+
+  .magnifier {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* drugi slajd */
+
+  .tool-card {
+    width: calc(100% - 24px);
+
+    bottom: 12px;
+
+    padding: 22px;
+  }
+
+  /* tekst */
+
+  .info-content p,
+  .left-content p,
+  .wide-right-content p,
+  .narrow-right-content p,
+  .bottom-content p,
+  .final-bottom-content p {
+    font-size: 0.95rem;
+  }
+}
