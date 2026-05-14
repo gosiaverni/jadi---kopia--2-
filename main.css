@@ -9,17 +9,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  overflow-x: hidden;
-overflow-y: auto;
+  overflow: hidden;
 }
-.info-card,
-.left-card,
-.wide-right-card,
-.narrow-right-card,
-.bottom-card,
-.final-bottom-card {
-  overflow-y: auto;
-}
+
 /* TŁO */
 .hero {
   width: 100%;
@@ -347,7 +339,7 @@ overflow-y: auto;
   right: 0;
 
   width: 45%;
-  height: 100%;
+  min-height: 100%;
 
   padding:
     70px 50px 40px 50px;
@@ -603,7 +595,7 @@ overflow-y: auto;
   left: 0;
 
   width: 45%;
-  height: 100%;
+  min-height: 100%;
 
   padding:
     70px 50px 40px 50px;
@@ -696,7 +688,7 @@ overflow-y: auto;
   right: 0;
 
   width: 60%;
-  height: 100%;
+  min-height: 100%;
 
   padding:
     70px 60px 40px 60px;
@@ -823,7 +815,7 @@ overflow-y: auto;
   right: 0;
 
   width: 38%;
-  height: 100%;
+  min-height: 100%;
 
   padding:
     70px 45px 40px 45px;
@@ -864,7 +856,7 @@ overflow-y: auto;
 }
 
 .narrow-right-content p {
-  font-size: 1.3rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
 
   line-height: 1.7;
 
@@ -957,7 +949,7 @@ overflow-y: auto;
 }
 
 .final-bottom-content p {
-  font-size: 1.2rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
 
   line-height: 1.7;
 
@@ -996,7 +988,7 @@ overflow-y: auto;
   display: flex;
 
   justify-content: flex-end;
-   margin-top: -75px;
+   margin-top: auto;
 
 }
 
@@ -1099,6 +1091,9 @@ overflow-y: auto;
 
     padding: 22px;
   }
+  .tool-card h2 {
+  font-size: 1.3rem;
+}
 
   /* tekst */
 
@@ -1109,5 +1104,113 @@ overflow-y: auto;
   .bottom-content p,
   .final-bottom-content p {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-height: 900px) {
+
+  .info-card,
+  .left-card,
+  .wide-right-card,
+  .narrow-right-card {
+    padding:
+      42px 32px 28px 32px;
+  }
+
+  .bottom-card,
+  .final-bottom-card {
+    padding:
+      32px 32px 24px 32px;
+  }
+
+  /* TYTUŁY */
+
+  .info-content h2,
+  .left-content h2,
+  .wide-right-content h2,
+  .narrow-right-content h2,
+  .bottom-content h2,
+  .final-bottom-content h2 {
+
+    font-size:
+      clamp(1.5rem, 3vw, 2.5rem);
+
+    margin-bottom: 18px;
+
+    line-height: 1;
+  }
+
+  /* PARAGRAFY */
+
+  .info-content p,
+  .left-content p,
+  .wide-right-content p,
+  .narrow-right-content p,
+  .bottom-content p,
+  .final-bottom-content p {
+
+    font-size:
+      clamp(0.9rem, 1.1vw, 1.1rem);
+
+    line-height: 1.45;
+  }
+
+  /* PRZYCISKI */
+
+  .button-group button {
+
+    padding: 14px 18px;
+
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-height: 740px) {
+
+  .info-card,
+  .left-card,
+  .wide-right-card,
+  .narrow-right-card,
+  .bottom-card,
+  .final-bottom-card {
+
+    padding:
+      24px 22px 20px 22px;
+  }
+
+  .info-content h2,
+  .left-content h2,
+  .wide-right-content h2,
+  .narrow-right-content h2,
+  .bottom-content h2,
+  .final-bottom-content h2 {
+
+    font-size:
+      clamp(1.3rem, 2.2vw, 2rem);
+
+    margin-bottom: 14px;
+  }
+
+  .info-content p,
+  .left-content p,
+  .wide-right-content p,
+  .narrow-right-content p,
+  .bottom-content p,
+  .final-bottom-content p {
+
+    font-size: 0.92rem;
+
+    line-height: 1.35;
+  }
+
+  .button-group {
+    gap: 12px;
+  }
+
+  .button-group button {
+
+    padding: 12px 16px;
+
+    font-size: 0.9rem;
   }
 }
