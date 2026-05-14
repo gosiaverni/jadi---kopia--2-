@@ -9,9 +9,17 @@
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+overflow-y: auto;
 }
-
+.info-card,
+.left-card,
+.wide-right-card,
+.narrow-right-card,
+.bottom-card,
+.final-bottom-card {
+  overflow-y: auto;
+}
 /* TŁO */
 .hero {
   width: 100%;
@@ -156,6 +164,11 @@ body {
   .start-btn {
     width: 100%;
   }
+  .button-group button {
+  padding: 14px 18px;
+
+  font-size: 1rem;
+}
 }
 
 /* DRUGI KONTENER */
@@ -631,7 +644,7 @@ body {
 }
 
 .left-content p {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.4vw, 1.3rem);
 
   line-height: 1.7;
 
@@ -724,7 +737,7 @@ body {
 }
 
 .wide-right-content p {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.4vw, 1.3rem);
 
   line-height: 1.7;
 
