@@ -114,15 +114,30 @@ function animateMagnifier() {
 
   if (toolCard.classList.contains('active')) {
 
-    const zoom = 2;
+    const zoom = 1.4;
 
-    /* ruch lupy */
+/* dynamiczny rozmiar lupy */
 
-    magnifier.style.left = `${mouseX - 110}px`;
-magnifier.style.top = `${mouseY - 110}px`;
-    
+const lensWidth = magnifier.offsetWidth;
+const lensHeight = magnifier.offsetHeight;
+
+const lensCenterX = lensWidth / 2;
+const lensCenterY = lensHeight / 2;
+
+/* pozycja lupy */
+
+magnifier.style.left =
+  `${mouseX - lensCenterX}px`;
+
+magnifier.style.top =
+  `${mouseY - lensCenterY}px`;
+
+/* pozycja względem obrazu */
+
 const rect =
   backgroundImage.getBoundingClientRect();
+
+/* proporcje */
 
 const relativeX = mouseX - rect.left;
 const relativeY = mouseY - rect.top;
@@ -130,10 +145,11 @@ const relativeY = mouseY - rect.top;
 magnifierImage.style.transform =
   `
   translate(
-    ${-relativeX * zoom + 950}px,
-    ${-relativeY * zoom + 500}px
+    ${-relativeX * zoom + lensCenterX}px,
+    ${-relativeY * zoom + lensCenterY}px
   )
   scale(${zoom})
+  translateZ(0)
   `;
 
 
